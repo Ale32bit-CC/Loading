@@ -63,7 +63,7 @@ local w,h = term.getSize()
 local function writeC(txt)
     _,y = term.getCursorPos()
     term.setCursorPos(math.ceil(w/2)-math.ceil(#txt/2),y)
-    write(txt)
+    term.write(txt)
 end
 local tottim = 0
 local dead = false
